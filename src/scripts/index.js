@@ -11,26 +11,13 @@ function justRates () {
   const $body = document.querySelector('body')
 
   // Fade.
-  const div = document.createElement('div')
-  div.style.position = 'fixed'
-  div.style.top = '0'
-  div.style.left = '0'
-  div.style.width = '100%'
-  div.style.height = '100%'
-  div.style.zIndex = '9999'
-  div.style.backgroundColor = 'white'
-  div.style.opacity = '1'
-  div.style.transition = 'opacity 2s'
-  document.body.appendChild(div)
+  const $darkLayer = document.querySelector('#darkLayer')
   setTimeout(() => {
-    div.style.opacity = '0'
+    $darkLayer.style.opacity = '0'
   }, 2000)
 
   // No clicks.
   $body.style.pointerEvents = 'none'
-
-  // Dark style.
-  $body.style.filter = 'invert(1)'
 
   // Remove header and footer.
   document.querySelector('.header').remove()
