@@ -1,0 +1,41 @@
+{
+  "name": "dolar-hoy-app",
+  "version": "1.0.0",
+  "description": "Dolar Hoy App",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codealchemist/dolar-hoy-app.git"
+  },
+  "keywords": [
+    "dolar",
+    "hoy",
+    "app"
+  ],
+  "author": "Alberto Miranda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codealchemist/dolar-hoy-app/issues"
+  },
+  "homepage": "https://github.com/codealchemist/dolar-hoy-app#readme",
+  "devDependencies": {
+    "@electron-forge/cli": "^7.4.0",
+    "@electron-forge/maker-deb": "^7.4.0",
+    "@electron-forge/maker-rpm": "^7.4.0",
+    "@electron-forge/maker-squirrel": "^7.4.0",
+    "@electron-forge/maker-zip": "^7.4.0",
+    "@electron-forge/plugin-auto-unpack-natives": "^7.4.0",
+    "@electron-forge/plugin-fuses": "^7.4.0",
+    "@electron/fuses": "^1.8.0",
+    "electron": "^32.0.1"
+  },
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.1",
+    "v8-compile-cache": "^2.4.0"
+  }
+}
