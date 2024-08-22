@@ -20,8 +20,10 @@ function justRates () {
   $body.style.pointerEvents = 'none'
 
   // Remove header and footer.
-  document.querySelector('.header').remove()
-  document.querySelector('footer').remove()
+  const $header = document.querySelector('.header')
+  const $footer = document.querySelector('.footer')
+  $header?.remove()
+  $footer?.remove()
 
   elementToCanvas(() => {
     const $rates = document.querySelector('#home_0 .dolar')
