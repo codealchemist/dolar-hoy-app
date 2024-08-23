@@ -1,7 +1,11 @@
 module.exports = `
 function injectDiv (el) {
+  // If div exists remove it.
+  const oldDiv = document.getElementById('justRates')
+  if (oldDiv) oldDiv.remove()
+
   // Create a new div element.
-  var newDiv = document.createElement('div')
+  const newDiv = document.createElement('div')
 
   newDiv.id = 'justRates'
   newDiv.style.position = 'fixed'

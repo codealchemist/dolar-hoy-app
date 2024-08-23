@@ -1,5 +1,11 @@
 module.exports = `
-function elementToCanvas (callback) {
+function loadHtml2Canvas (callback) {
+  if (window.html2canvas) {
+    console.log('html2canvas library has already been loaded.')
+    callback()
+    return
+  }
+
   // Create a new script element
   var script = document.createElement('script')
 
