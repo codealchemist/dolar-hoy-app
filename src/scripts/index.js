@@ -51,11 +51,10 @@ function justRatesHtml () {
       scale: 1.5;
       z-index: 9999;
       background: white;
-      top: 50%;
-      bottom: 50%;
+      top: 0;
+      bottom: 0;
       left: 0;
       right: 0;
-      margin: auto;
     }
 
     #home_0::before {
